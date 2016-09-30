@@ -41,7 +41,7 @@ int main(int argc, char** argv)
     
     tlvmByte memBuffer[0xFFFF];
 
-    //tlvmSetClockspeed(ctx, TLVM_MHZ(2,0));
+    tlvmSetClockspeed(ctx, TLVM_MHZ(2,0));
 
     printf( "Clock: %s\n", tlvmError() );
 
