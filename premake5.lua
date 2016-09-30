@@ -26,7 +26,7 @@ solution "tlvm"
         defines { "DEBUG" }
         flags { "Symbols" }
         targetdir "build/debug"
-
+        
     configuration "Release"
         defines { "NDEBUG" }
         optimize "Size"
@@ -38,7 +38,7 @@ solution "tlvm"
     dofile("tlvm/buildlib.lua")
 
     project "imsai"
-        language "C"
+    language "C"
     kind "ConsoleApp"
     files { "src/**.c" }
     links { "tlvm" }
